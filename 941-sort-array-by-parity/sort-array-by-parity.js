@@ -1,0 +1,12 @@
+var sortArrayByParity = function(nums) {
+  let j=0;
+    for(i=0; i<nums.length; i++){
+      if(nums[i] % 2 == 0){
+         let temp = nums[i]
+         nums[i] = nums[j]
+         nums[j] = temp
+         j++
+      }
+    }
+    return nums
+};
